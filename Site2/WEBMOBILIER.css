@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap');
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: Opx;
+    padding: Opx;
+}
+
+
+/* Barre de navigation */
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: aliceblue;
+    position: sticky;
+    top: 0;
+}
+
+nav h1 {
+    font-size: 20px;
+}
+
+nav .onglets {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav .onglets p {
+    font-size: 17px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+nav .onglets input {
+    margin: 8px 20px;
+    padding: 15px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    background-color: beige;
+}
+
+
+/*Fin de la  Barre de navigation */
+
+
+/*-- header -->*/
+
+.header {
+    position: relative;
+}
+
+.header h1 {
+    position: relative;
+    color: black;
+    font-size: 30px;
+}
+
+.header h1 :nth-child(1) {
+    color: transparent;
+    -webkit-text-stroke: 2px #011016;
+}
+
+
+/*<--  Finheader -->*/
+
+
+/* Section principale */
+
+.main {
+    margin: 20px;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Toutes les cartes */
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cards.card {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.cards .card img {
+    width: 300px;
+}
+
+.cards.card .card-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cards .card .card-body p {
+    margin-top: -10px;
+}
+
+
+/* Fin Toutes les cartes */
+
+
+/* Video de presentation */
+
+.main .video {
+    margin-top: 80px;
+    width: 90%;
+    cursor: pointer;
+}
+
+.video .video iframe {
+    border: none;
+    border-radius: 30px;
+    width: 100%;
+    height: 400px;
+}
+
+
+/* Fin Video de presentation */
+
+
+/* Fin Section principale */
+
+
+/* Pied de page */
+
+footer {
+    margin-top: 100px;
+    background-color: aquamarine;
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+footer .social-media {
+    display: flex;
+}
+
+footer .social-media p {
+    margin: 15px;
+    cursor: pointer;
+}
+
+
+/*  FinPied de page */
+
+@media screen and(max-width: 640px) {
+    nav.onglet.link,
+    nav h1 {
+        display: none;
+    }
+    .cards.card img {
+        width: 300px;
+    }
+}
